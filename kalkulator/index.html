@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSapatépítés</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/index.html" id="muveletGomb"> ←Vissza</a>
+      <a href="#">Szolgáltatásaink</a>
+      <a href="#">Ügyfeleinknek</a>
+      <a href="#">Kapcsolat</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Találd ki</a>
+    </div>
+
+    <div id="container">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; open</span>
+      <h1>Csapatépítő tréning</h1>
+      <div id="calculator">
+        <h2>Kalkulátor</h2>
+
+        <label for="participants">Résztvevők száma:</label>
+
+        <input type="number" id="participants" />
+
+        <label for="price">Részvételi díj:</label>
+
+        <input type="number" id="price" />
+
+        <button id="calculate">Kiszámol</button>
+
+        <p id="total">Végösszeg: 0 Ft</p>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Árlisták:</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#alap" style="background-color: white" onclick="megjelen()">alap</a>
+          <a href="#ezust" style="background-color: rgb(158, 152, 152)" onclick="megjelen2()">Ezüst</a>
+          <a href="#arany" style="background-color: rgb(153, 156, 82)" onclick="megjelen3()">Arany</a>
+        </div>
+      </div>
+
+      <div id="menu" style="display: none">
+        <ol>
+          <li>Játékos Teambuilding: Közepes méretű csoportos játékok és feladatok, amelyek segítik a csapattagok közötti kommunikációt és együttműködést.</li>
+          <li>
+            Csapatépítő tréning: Egyszerű tréning vagy workshop, amely központi témával foglalkozik, például konfliktuskezelés vagy hatékony kommunikáció. Csapatépítő
+          </li>
+          <li>eszközök: Alapvető eszközök és erőforrások az irodában vagy online, amelyek segíthetnek a csapatépítésben.</li>
+        </ol>
+      </div>
+
+      <div id="menu2" style="display: none">
+        <ol>
+          <li>Kalandos Teambuilding: Kalandpark vagy más kültéri kihívásokat tartalmazó program, amely erősíti a csapatszellemet és a bizalmat.</li>
+          <li>Személyreszabott Tréningek: Több témájú tréningek, amelyek az egyes csapattagok igényeire szabottak, például vezetésfejlesztés vagy stresszkezelés.</li>
+          <li>Csapatfejlesztő Hétvége: Hosszabb program, például hétvégi kiruccanás, ahol a csapat tagjai mélyebb kapcsolatot alakíthatnak ki.</li>
+        </ol>
+      </div>
+
+      <div id="menu3" style="display: none">
+        <ol>
+          <li>
+            Exkluzív Csapaterősítés: Egyedi és exkluzív csapatépítő tevékenységek, például különleges kihívások, csapatépítő versenyek vagy szimulált vállalati projektek.
+          </li>
+          <li>Személyre Szabott Tréningek és Mentoring: Az egyes csapattagokhoz igazított tréningek és vezetői mentorálás.</li>
+          <li>Csapatépítő Utazás: Nemzetközi vagy exkluzív úti célok, ahol a csapat tagjai egy közös cél felé dolgozhatnak.</li>
+        </ol>
+      </div>
+
+      <footer>
+        <p>
+          ✉: csapatepito.trening@gmail.com <br />
+
+          ☏: 06 30 999 9999 <br />
+
+          📍: Budapest, Kisköre utca 3.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
